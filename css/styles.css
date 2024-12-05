@@ -177,7 +177,7 @@ header {
 
 
 /* Estilos adaptativos para dispositivos móveis */
-@media (max-width: 960px) {
+@media (max-width: 773px) {
     header {
         text-align: center;
         position: fixed;
@@ -192,7 +192,6 @@ header {
 
     .banner__introducao {
         width: 100vh;
-        max-height: 100vh;
         object-fit: fill;
         object-position: center;
         
@@ -204,7 +203,7 @@ header {
     }
 
     .texto__banner {
-        font-size: 24px; /* Escala proporcionalmente em dispositivos móveis */
+        font-size: 6vw; /* Escala proporcionalmente em dispositivos móveis */
         line-height: 1;
         top: 70vh;
     }
