@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jornal do Turvo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="titulo__header">Jornal do Turvo</h1>
+    </header>
+
+    <section class="thumb">
+        <div class="banner">
+            <img src="https://f.i.uol.com.br/fotografia/2024/03/27/1711546688660421406ef31_1711546688_3x2_rt.jpg" alt="foto de cigarrros eletronicos" class="banner__introducao">
+            <div class="texto__banner">
+                <h2 class="titulo__banner">Cigarros Eletronicos</h2>
+                <h3 class="sub__banner">Descubra o verdadeiro impacto dessa tecnologia na saúde e no meio ambiente.</h3>
+            </div>
+            <div class="backdrop"></div>
+        </div>
+    </section>
+
+    <section class="introducao">
+        <div class="texto__padrao texto__introducao">
+            <h3>Os cigarros eletrônicos têm transformado o cenário do consumo de nicotina, mas a sua popularidade traz implicações sociais alarmantes. A indústria tem como alvo o público jovem, utilizando sabores atrativos e campanhas publicitárias modernas para criar uma falsa imagem de segurança e sofisticação. Dados mostram que o uso entre adolescentes cresceu exponencialmente nos últimos anos, alimentado pela falta de regulamentação eficaz e pelo fácil acesso ao produto. Essa prática levanta sérias preocupações sobre a normalização de um comportamento que, embora diferente do tabagismo tradicional, mantém a dependência de nicotina e introduz novas incertezas à saúde pública.</h3>
+        </div>
+        <div>
+            <img src="https://www.moneytimes.com.br/uploads/2022/07/unnamed-11.png" alt="foto de cigarro eletronico" class="imagem__texto">
+        </div>
+    </section>
+
+    <!-- Seção com Gráficos e Dados -->
+    <section class="graficos">
+        <h2 class="titulo__header">Impacto na Saude: Dados e Graficos</h2>
+        <div class="grafico__container">
+            <canvas id="graficoSaude" width="400" height="400"></canvas>
+            <script>
+                var ctx = document.getElementById('graficoSaude').getContext('2d');
+                var graficoSaude = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Cigarros Tradicionais', 'Cigarros Eletrônicos', 'Cessação'],
+                        datasets: [{
+                            label: 'Impacto na Saúde',
+                            data: [10, 5, 2],
+                            backgroundColor: ['rgba(255, 99, 132, 0.2)', 'rgba(54, 162, 235, 0.2)', 'rgba(75, 192, 192, 0.2)'],
+                            borderColor: ['rgba(255, 99, 132, 1)', 'rgba(54, 162, 235, 1)', 'rgba(75, 192, 192, 1)'],
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+            </script>
+        </div>
+    </section>
+
+    <!-- Mapa Mental -->
+    <section class="mapa-mental">
+        <h2 class="titulo__header">Video sobre o tema</h2>
+        <div class="mapa__imagem">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JnHoQh4eklU?si=pOuC05s9TEd6CW8G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+   
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <p><a href="#" class="links__footer">Política de Privacidade</a> <a href="#" class="links__footer">Termos de Uso</a><a href="https://www.creativefabrica.com/pt/product/akira-expanded/" class="links__footer">Akira-expanded</a></p>
+        <p class="sub__footer">Este site é um projeto escolar destinado à produção de um artigo científico sobre biotecnologia. <br>Não possui finalidade comercial, <br> e todas as imagens, gráficos e textos aqui presentes são utilizados apenas para fins educacionais, sem fins lucrativos. <br> Direitos reservados aos autores originais.</p>
+        <p>&copy; 2024 Escola Estadual Bairro Turvo dos Almeidas.</p>
+        <p> <a href="www.hrzyn.cloud">@hirozn</a></p>
+    </footer>
+
+</body>
+
+</html>
