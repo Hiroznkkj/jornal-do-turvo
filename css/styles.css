@@ -143,28 +143,32 @@ header {
     height: 100%;
     font-family: 'Inter';
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
     flex-direction: column;
     font-size: 10px;
+    
 }
 .rodape p {
     margin-top: 1em;
+    margin: 1em;
 }
 
 .rodape .links__footer {
-    color: grey;
+    color: rgb(206, 206, 206);
     align-self: center;
     text-decoration: none;
-    margin: 1em 0.5em;
-    font-size: 12px;
-    
+    margin: 1em 0;
+    font-size: 12px; 
+    display: block;
 }
+
+
 .rodape a {
     color: grey;
     align-self: center;
     text-decoration: none;
-    margin: 1em 0.5em;
+    margin: 1em 0;
 }
 .rodape a:hover {
     color: white;
@@ -178,15 +182,28 @@ header {
         text-align: center;
     }
 
+    .banner{
+        height: 85vh;
+        overflow: hidden;
+    }
+
+    .banner__introducao {
+        width: 100vh;
+        max-height: 100vh;
+        object-fit: fill;
+        object-position: center;
+        
+    }
 
     .titulo__header {
-        font-size: 5vw; /* Ajusta o tamanho do texto para telas menores */
+        font-size: 24px; /* Ajusta o tamanho do texto para telas menores */
+        
     }
 
     .texto__banner {
-        font-size: 4vw; /* Escala proporcionalmente em dispositivos móveis */
+        font-size: 24px; /* Escala proporcionalmente em dispositivos móveis */
         line-height: 1;
-        top: 80%;
+        top: 70vh;
     }
 
     .backdrop {
@@ -194,22 +211,26 @@ header {
     }
 
     .sub__banner {
-        font-size: 3vw; /* Reduz o subtítulo em telas menores */
+        font-size: 16px; /* Reduz o subtítulo em telas menores */
+        font-weight: 200;
     }
 
     .introducao {
         grid-template-columns: 1fr; /* Cada item ocupa uma linha */
-        gap: 1em;
+        gap: .5em;
     }
 
     .texto__introducao {
         margin: 2em 1em; /* Reduz margens para se ajustar ao espaço limitado */
         text-align: justify;
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .imagem__texto {
-        width: 60%; /* Ajusta largura da imagem */
+        width: 100vw; /* Ajusta largura da imagem */
+        height: 7vh;
+        object-fit: cover;
+        border-radius: 0;
     }
 
     .grafico__container {
@@ -228,7 +249,7 @@ header {
 
     .rodape {
         font-size: 12px; /* Ajusta o tamanho do texto do rodapé */
-        text-align: center;
+        text-align: left;
         padding: 1em;
     }
 
